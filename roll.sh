@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Author: Bendik J. Ferkingstad, <https://github.com/bendikf>
+#
 # This work is licensed under CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
 #
 # For more information, please refer to <https://creativecommons.org/publicdomain/zero/1.0/>
