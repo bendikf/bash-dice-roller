@@ -60,28 +60,31 @@ min_roll() {
 	echo $min
 }
 
+# Get the name of the script
+SCRIPT_NAME=$(basename "$0")
+
 # Displays the help message
 show_help() {
-	echo "Usage: $0 [options] NdM"
-	echo
-    	echo "Roll dice specified by NdM, where N is the number of dice and M is the number of sides."
-    	echo
-    	echo "Options:"
-    	echo "  -s, --sum       Return the sum of the dice rolls (default behavior)"
-  	echo "  -l, --list      List the results from all rolls"    
-	echo "  -x, --max       Return the maximum result"
-	echo "  -m, --min       Return the minimum result"
-	echo "  -h, --help      Display this help message"
-    	echo
-       	echo "Examples:"
-	echo "  $0 2d6          Roll two six-sided dice and return the sum"
-    	echo "  $0 -l 3d10      Roll three ten-sided dice and list the results"
-       	echo "  $0 -x 1d20      Roll one twenty-sided die and return the highest result"
-	echo "  $0 -m 4d8       Roll four eight-sided dice and return the lowest result"
-	echo
-	echo "Special cases:"
-	echo "  $0          Roll one six-sided die and return the result"
-	echo "  $0 d4       Roll one four-sided die and return the result"
+        echo "Usage: $SCRIPT_NAME [options] NdM"
+        echo
+        echo "Roll dice specified by NdM, where N is the number of dice and M is the number of sides."
+        echo
+        echo "Options:"
+        echo "  -s, --sum       Return the sum of the dice rolls (default behavior)"
+        echo "  -l, --list      List the results from all rolls"    
+        echo "  -x, --max       Return the maximum result"
+        echo "  -m, --min       Return the minimum result"
+        echo "  -h, --help      Display this help message"
+        echo
+        echo "Examples:"
+        echo "  $SCRIPT_NAME 2d6          Roll two six-sided dice and return the sum"
+        echo "  $SCRIPT_NAME -l 3d10      Roll three ten-sided dice and list the results"
+        echo "  $SCRIPT_NAME -x 1d20      Roll one twenty-sided die and return the highest result"
+        echo "  $SCRIPT_NAME -m 4d8       Roll four eight-sided dice and return the lowest result"
+        echo
+        echo "Special cases:"
+        echo "  $SCRIPT_NAME          Roll one six-sided die and return the result"
+        echo "  $SCRIPT_NAME d4       Roll one four-sided die and return the result"
 }
 
 # Default action
