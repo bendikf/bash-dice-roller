@@ -155,7 +155,7 @@ if [[ $dice_string =~ ^([0-9]*)d([0-9]+)$ ]]; then
 				echo "Sum: $(sum_rolls ${rolls_array[@]})"
 				;;
 			list)
-				echo "Rolls: ${rolls_array[@]}"
+				echo "Results: ${rolls_array[@]}"
 				;;
 			max)
 				echo "Max: $(max_roll ${rolls_array[@]})"
